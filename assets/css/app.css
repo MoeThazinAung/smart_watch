@@ -1,0 +1,254 @@
+@font-face{
+	font-family: poppin;
+	src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: poppin;
+}
+body{
+	background-color: #D5F5E3;
+}
+/*NAV*/
+#nav{
+	width: 100%;
+/*	border: 1px solid red;*/
+/*	height: 100px;*/
+	
+}
+#nav .container{
+	max-width: 90%;
+/*	border: 1px solid blue;*/
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	height: 100%;
+	align-items: flex-end;
+}
+#nav .container > *{
+/*	flex-basis: 33.33%;*/
+}
+#nav .container .brand{
+	font-size: 30px;
+}
+#nav .container .menu-items{
+	display: flex;
+	list-style-type: none;
+}
+#nav .container .menu-items li{
+	margin-left: 40px;
+	padding: 80px 10px 0 10px;
+/*	text-align: center;*/
+/*	border: 1px solid yellow;*/
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+
+}
+#nav .container .menu-items li:hover{
+	background-color: #F5B7B1 ;
+/*	height: 100%;*/
+	transition: 0.5s;
+}
+#nav .container .menu-items li:hover a{
+	color: #fff;
+}
+#nav .container .menu-items a{
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+
+}
+#nav .container .menu-icons{
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+
+}
+#nav .container .menu-icons i{
+	font-size: 20px;
+	padding-left: 40px;
+}
+
+/*header*/
+#header{
+	width: 100%;
+/*	border: 1px solid red;*/
+	margin-top: 50px;
+}
+#header .container{
+	max-width: 90%;
+/*	border: 1px solid blue;*/
+	margin: auto;
+	display: flex;
+	/*align-items: center;
+	justify-content: center;*/
+}
+#header .container > *{
+	flex-basis: 50%;
+/*	border: 1px solid yellow;*/
+}
+#header .container .content{
+/*	width: 100%;*/
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+}
+#header .container .content  .text{
+	padding: 35px 0;
+}
+#header .container .content .select-section{
+	display: flex;
+	padding-block: 50px;
+}
+#header .select-section .border{
+	margin: 0 10px;
+/*	transform: scale(2);*/
+}
+#header .select-section .color{
+
+}
+
+#header .select-section .border {
+	cursor: pointer;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#header .select-section .border.active {
+	border: 2px solid black;
+}
+
+
+#header .select-section .border button{
+	border: none;
+	cursor: pointer;
+}
+#header .select-section button:hover{
+/*	border: 1px solid black;*/
+}
+#header .select-section span:hover .border{
+	display: block;
+}
+#header .container .content .select p{
+	display: inline;
+}
+#header .container .content .btn{
+	padding: 12px 12px;
+	border-radius: 20px;
+	border: none;
+	background-color:  #F5B7B1;
+	transition: 0.5s;
+}
+#header .container .content .btn:hover{
+	border: 1px solid red;
+
+}
+#header .container h1{
+	font-size: 70px;
+	line-height: 70px;
+}
+#header .content .select-color1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #F5B7B1;
+/*	display: inline;*/
+}
+#header .content .select-color2{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: black;
+/*	display: inline;*/
+}
+#header .content .select-color3{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+/*	display: inline;*/
+}
+#header .content .select-color4{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+/*	display: inline-block;*/
+}
+
+
+
+#header .container .watch-img{
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+}
+#header .watch-img img{
+	flex-basis: 80%;
+/*	border: 1px solid red ;*/
+	padding-right: 50px;
+}
+#header .container img:first-child{
+	display: block;
+}
+#header .container img{
+	display: none;
+}
+#header .container img.active{
+	display: block;
+}
+#header .list{
+	flex-basis: 20%;
+/*	border: 1px solid blue;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+/*	align-items: flex-end;*/
+}
+#header .container .watch-img img{
+	width: 350px;
+	height: 350px;
+/*	box-shadow: 1px 1px 1px black;*/
+}
+#header .watch-img .arrow{
+	position: relative;
+}
+#header .container .watch-img .btn1{
+/*	display: flex;*/
+/*	justify-content: space-between;*/
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 0;
+	right: 15%;
+}
+#header .container .watch-img .btn2{
+/*	display: flex;*/
+/*	justify-content: space-between;*/
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 0;
+	right: 0%;
+}
+#header .container .watch-img .btn1:hover{
+	transform: scale(1.1);
+}
+#header .container .watch-img .btn2:hover{
+	transform: scale(1.1);
+}
+#header .watch-img  i{
+	
+	font-size: 20px;
+}
